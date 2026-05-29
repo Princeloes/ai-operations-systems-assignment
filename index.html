@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduOps Hub - AI Systems & Operations</title>
+  <!-- Google Fonts: Outfit for body/UI, JetBrains Mono for system logs -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.62 48.62 0 0112 20.904a48.62 48.62 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A5.905 5.905 0 018 3.097V9.75M4.26 10.147a49.048 49.048 0 0115.482 0m-.491 6.347a48.8 48.8 0 01-14.992 0m14.992 0a50.569 50.569 0 012.658-.813A5.906 5.906 0 0016 3.097V9.75M12 12.75a1.125 1.125 0 11-2.25 0 1.125 1.125 0 012.25 0z" />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>EduOps Hub</h1>
+          <span>AI Systems & Operations</span>
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav">
+        <button class="nav-btn active" data-tab="workflow-studio">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          </svg>
+          Workflow Studio
+        </button>
+        <button class="nav-btn" data-tab="eduops-engine">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          EduOps Engine
+        </button>
+        <button class="nav-btn" data-tab="rollercoaster-lab">
+          <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          Rollercoaster Lab
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p>Created for AI Operations & Systems Assignment</p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Top Bar / Header -->
+      <header class="top-bar">
+        <div class="top-bar-title">
+          <h2 id="current-tab-title">Workflow Studio</h2>
+          <p id="current-tab-subtitle">Redesigning grading & student feedback loops with AI automation</p>
+        </div>
+        <div class="top-bar-meta">
+          <span class="badge badge-success">Systems Thinking</span>
+          <span class="badge badge-indigo">Practical Demo</span>
+        </div>
+      </header>
+
+      <!-- Panel Content Wrapper -->
+      <div class="panel-container">
+
+        <!-- ==================== TAB 1: WORKFLOW STUDIO ==================== -->
+        <section id="workflow-studio-panel" class="tab-panel active">
+          
+          <!-- Introduction Card -->
+          <div class="glass-card main-intro">
+            <h3>Task 1: Redesigning Repetitive Educational Workflows</h3>
+            <p>
+              In traditional secondary schools, open-ended formative assessments (essays, lab reports, complex calculations) are vital for deep learning. However, the feedback loop is highly repetitive, manual, and administrative, leading to extreme bottlenecks in classroom operations.
+            </p>
+          </div>
+
+          <!-- Side-by-Side Comparison Matrix -->
+          <div class="comparison-grid">
+            <div class="glass-card status-card before-card">
+              <div class="card-header-accent red-accent"></div>
+              <h4>Legacy Workflow: The Paper & Manual Loop</h4>
+              <ul class="step-list">
+                <li>
+                  <span class="step-num">1</span>
+                  <div class="step-info">
+                    <strong>Submission Hand-in:</strong> Students turn in physical sheets or upload PDFs to a basic LMS drive.
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">2</span>
+                  <div class="step-info">
+                    <strong>Administrative Sorting:</strong> Teacher prints submissions, matches them to the attendance log, and checks off names.
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">3</span>
+                  <div class="step-info">
+                    <strong>Manual Review & Annotation:</strong> Teacher reads each essay, manually referencing a paper rubric, writing margin notes. (8-10 mins/student).
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">4</span>
+                  <div class="step-info">
+                    <strong>Rubric & Score Logging:</strong> Teacher manually copies rubrics and enters sub-scores into an Excel spreadsheet.
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">5</span>
+                  <div class="step-info">
+                    <strong>Email Drafting:</strong> Teacher drafts individual emails or uploads feedback documents back to the LMS. (3 mins/student).
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">6</span>
+                  <div class="step-info">
+                    <strong>Classroom Review:</strong> Teacher manually identifies global errors to build revision notes for the next lecture.
+                  </div>
+                </li>
+              </ul>
+              <div class="time-metric">
+                <span class="label">Average Processing Time (30 Students)</span>
+                <span class="value">~6.5 Hours</span>
+              </div>
+            </div>
+
+            <div class="glass-card status-card after-card">
+              <div class="card-header-accent emerald-accent"></div>
+              <h4>Redesigned Workflow: The AI-Assisted Loop</h4>
+              <ul class="step-list">
+                <li>
+                  <span class="step-num">1</span>
+                  <div class="step-info">
+                    <strong>Digital Submission:</strong> Students upload submissions via a simple form or automated drop-box.
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">2</span>
+                  <div class="step-info">
+                    <strong>Make.com / Zapier Orchestrator:</strong> Submission triggers a webhook. The file is uploaded to Google Drive and logged in Airtable.
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">3</span>
+                  <div class="step-info">
+                    <strong>AI Analysis Engine (LLM):</strong> Submission is parsed. LLM evaluates text against the rubric, drafts positive reinforcement, identifies key errors, and outlines action steps.
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">4</span>
+                  <div class="step-info">
+                    <strong>Human-in-the-Loop Review:</strong> Teacher reviews the generated Airtable record, selects auto-drafted scores and edits feedback as needed. (60 secs/student).
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">5</span>
+                  <div class="step-info">
+                    <strong>Automated Dispatch:</strong> Teacher marks student "Reviewed". Webhook triggers Zapier to email feedback, update LMS, and log parental notice.
+                  </div>
+                </li>
+                <li>
+                  <span class="step-num">6</span>
+                  <div class="step-info">
+                    <strong>Real-time Analytics Dashboard:</strong> System aggregates classroom errors, auto-generating a customized remediation slide deck for tomorrow's class.
+                  </div>
+                </li>
+              </ul>
+              <div class="time-metric">
+                <span class="label">Average Processing Time (30 Students)</span>
+                <span class="value success-glow">~45 Minutes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Systems Architecture Flow Diagram -->
+          <div class="glass-card system-architecture">
+            <h3>System Architecture: Automated Feedback Pipelines</h3>
+            <p>Below is the visual system map representing how ChatGPT/Claude, Airtable, and Make.com integrate to form a seamless educational operations loop.</p>
+            
+            <div class="flowchart-container">
+              <!-- SVG Flowchart -->
+              <svg viewBox="0 0 800 380" class="flowchart-svg">
+                <!-- Defs for markers and filters -->
+                <defs>
+                  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B7280" />
+                  </marker>
+                  <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#10B981" />
+                  </marker>
+                  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="4" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
+
+                <!-- Step 1 Node -->
+                <g class="flow-node" transform="translate(40, 140)">
+                  <rect width="130" height="70" rx="8" class="node-rect border-gray" />
+                  <text x="65" y="30" class="node-title">1. Student Upload</text>
+                  <text x="65" y="50" class="node-desc">Digital Form / Upload</text>
+                </g>
+
+                <!-- Connector 1 -> 2 -->
+                <path d="M 170 175 L 212 175" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+                <!-- Step 2 Node (Make.com Router) -->
+                <g class="flow-node active-node" transform="translate(220, 120)">
+                  <rect width="140" height="110" rx="8" class="node-rect border-indigo" />
+                  <text x="70" y="30" class="node-title theme-indigo">2. Orchestration</text>
+                  <text x="70" y="55" class="node-desc">Make.com Webhook</text>
+                  <text x="70" y="75" class="node-desc">Router & Flow Trigger</text>
+                  <text x="70" y="95" class="node-badge">Automation</text>
+                </g>
+
+                <!-- Connector 2 -> 3 (LLM) -->
+                <path d="M 360 150 L 412 110" stroke="#10B981" stroke-width="2" marker-end="url(#arrow-emerald)" fill="none" />
+                
+                <!-- Connector 2 -> 4 (Airtable) -->
+                <path d="M 360 200 L 412 240" stroke="#10B981" stroke-width="2" marker-end="url(#arrow-emerald)" fill="none" />
+
+                <!-- Step 3 Node (AI LLM Agent) -->
+                <g class="flow-node" transform="translate(420, 45)">
+                  <rect width="140" height="90" rx="8" class="node-rect border-cyan" />
+                  <text x="70" y="30" class="node-title theme-cyan">3. AI Evaluation</text>
+                  <text x="70" y="50" class="node-desc">LLM Rubric Analysis</text>
+                  <text x="70" y="70" class="node-desc">Draft Feedback & Grade</text>
+                </g>
+
+                <!-- Step 4 Node (Airtable DB) -->
+                <g class="flow-node" transform="translate(420, 215)">
+                  <rect width="140" height="90" rx="8" class="node-rect border-purple" />
+                  <text x="70" y="30" class="node-title theme-purple">4. Airtable Logs</text>
+                  <text x="70" y="50" class="node-desc">Store raw essay</text>
+                  <text x="70" y="70" class="node-desc">Log AI draft & score</text>
+                </g>
+
+                <!-- Connectors from 3 & 4 to human in the loop -->
+                <path d="M 560 90 L 595 90 L 610 142" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+                <path d="M 560 260 L 595 260 L 610 208" stroke="#6B7280" stroke-width="2" marker-end="url(#arrow)" fill="none" />
+
+                <!-- Step 5 Node (Teacher/Human Review) -->
+                <g class="flow-node active-node" transform="translate(620, 125)">
+                  <rect width="140" height="100" rx="8" class="node-rect border-emerald" filter="url(#glow)" />
+                  <text x="70" y="30" class="node-title theme-emerald">5. Human Review</text>
+                  <text x="70" y="50" class="node-desc">Teacher checks and</text>
+                  <text x="70" y="70" class="node-desc">approves or edits</text>
+                  <text x="70" y="90" class="node-badge green-badge">HITL Verification</text>
+                </g>
+
+                <!-- Connector 5 -> Gmail Dispatch -->
+                <path d="M 760 175 L 778 175 M 778 175 L 778 335 L 300 335 L 300 240" stroke="#10B981" stroke-width="2" stroke-dasharray="4,4" fill="none" />
+                
+                <!-- Connector 2 to Gmail dispatch direct (trigger once teacher approves) -->
+                <path d="M 290 230 L 290 310 L 640 310 M 640 310 L 640 225" stroke="#10B981" stroke-dasharray="2,2" stroke-width="2" fill="none" />
+              </svg>
+            </div>
+            
+            <div class="features-columns">
+              <div class="feature-card">
+                <h5>Why This Architecture Works</h5>
+                <p>The "Human-in-the-Loop" architecture mitigates LLM hallucinations. The AI drafts the tedious text and logs basic criteria metrics, but the educator reviews and edits the final draft before it reaches students, ensuring zero loss in quality and absolute contextual accuracy.</p>
+              </div>
+              <div class="feature-card">
+                <h5>Operational Benefits</h5>
+                <ul>
+                  <li><strong>75% Latency Reduction:</strong> Students receive feedback within hours instead of 1-2 weeks.</li>
+                  <li><strong>Informed Intervention:</strong> Class-wide data points are automatically aggregated, showing which standards are failing.</li>
+                  <li><strong>Consistent Quality:</strong> AI maintains rigorous standards adherence without the fatigue that degrades manual grading over hours.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ==================== TAB 2: EDUOPS ENGINE ==================== -->
+        <section id="eduops-engine-panel" class="tab-panel">
+          
+          <div class="glass-card main-intro">
+            <h3>Task 2: AI Tool Operations Demonstration</h3>
+            <p>
+              Experience a functional simulation of our AI-Assisted feedback system in action. Select an essay and rubric, customize the parameters, and run the automation pipeline. The system will step through the workflow and output fully structures logs, Airtable entries, and drafted emails.
+            </p>
+          </div>
+
+          <div class="engine-layout">
+            
+            <!-- Controls Panel -->
+            <div class="glass-card engine-controls">
+              <h4>1. Configure Inputs</h4>
+              
+              <div class="form-group">
+                <label for="rubric-select">Grading Rubric Criteria</label>
+                <select id="rubric-select">
+                  <option value="physics-energy">Rollercoaster Energy Lab (Physics - Ages 11-14)</option>
+                  <option value="photosynthesis">Photosynthesis Processes (Biology - Ages 10-13)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="student-submission-select">Select Student Submission</label>
+                <select id="student-submission-select">
+                  <option value="essay-a">Leo Carter (Age 12) - High content, several physics misconceptions</option>
+                  <option value="essay-b">Maya Lin (Age 11) - Creative writing, lacking scientific math</option>
+                  <option value="custom">-- Write / Edit Custom Submission --</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="essay-text-area">Submission Content</label>
+                <textarea id="essay-text-area" rows="12"></textarea>
+              </div>
+
+              <button id="run-pipeline-btn" class="btn btn-primary btn-block">
+                <span>Start Grading Pipeline</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Operations Monitoring Panel -->
+            <div class="engine-monitoring">
+              
+              <!-- Console Log Wrapper -->
+              <div class="glass-card console-card">
+                <div class="console-header">
+                  <div class="console-buttons">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="console-title">orchestrator-console: Make.com Pipeline</div>
+                </div>
+                <div id="console-logs" class="console-body">
+                  <div class="console-prompt">// Ready to run. Configure inputs and click 'Start Grading Pipeline'.</div>
+                </div>
+              </div>
+
+              <!-- Outputs Panel -->
+              <div class="glass-card outputs-card disabled" id="pipeline-outputs-container">
+                <div class="outputs-tabs">
+                  <button class="output-tab-btn active" data-output="rubric-scores">Rubric Scorecard</button>
+                  <button class="output-tab-btn" data-output="airtable-view">Airtable Record</button>
+                  <button class="output-tab-btn" data-output="gmail-view">Gmail Draft</button>
+                </div>
+
+                <div class="outputs-content">
+                  <!-- Output 1: Rubric Scores -->
+                  <div id="rubric-scores-tab" class="output-panel active">
+                    <div class="scores-summary">
+                      <div class="overall-score-wheel">
+                        <span id="overall-score-val">0</span>
+                        <span class="max-score">/ 15</span>
+                      </div>
+                      <div class="score-meta">
+                        <h5 id="result-student-name">Student Name</h5>
+                        <p id="result-date">Assessed on: --/--/----</p>
+                      </div>
+                    </div>
+
+                    <div class="criteria-list" id="result-criteria-list">
+                      <!-- Populated dynamically -->
+                    </div>
+                  </div>
+
+                  <!-- Output 2: Airtable View -->
+                  <div id="airtable-view-tab" class="output-panel">
+                    <div class="database-sheet-wrapper">
+                      <table class="db-table">
+                        <thead>
+                          <tr>
+                            <th>Field Name</th>
+                            <th>Value</th>
+                          </tr>
+                        </thead>
+                        <tbody id="airtable-fields-tbody">
+                          <!-- Populated dynamically -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <!-- Output 3: Gmail View -->
+                  <div id="gmail-view-tab" class="output-panel">
+                    <div class="email-client">
+                      <div class="email-header">
+                        <div><strong>To:</strong> <span id="email-to-field">parent.carter@eduopsmail.com</span></div>
+                        <div><strong>Subject:</strong> <span id="email-subject-field">Feedback: Science Assignment - Leo Carter</span></div>
+                      </div>
+                      <div class="email-body" id="email-body-field">
+                        <!-- Populated dynamically -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- ==================== TAB 3: ROLLERCOASTER LAB ==================== -->
+        <section id="rollercoaster-lab-panel" class="tab-panel">
+          
+          <div class="glass-card main-intro">
+            <h3>Task 3: AI-Assisted Educational Resource Creation</h3>
+            <p>
+              Explore our scaffolded science learning module designed for students aged 10-15. This section features a conceptual guide, a physics simulator, and an interactive quiz. Try adjusting heights and friction in the simulator to see potential vs. kinetic energy exchanges.
+            </p>
+          </div>
+
+          <div class="lab-layout">
+            
+            <!-- Left Side: Interactive Simulator -->
+            <div class="lab-simulation-column">
+              <div class="glass-card simulator-card">
+                <div class="simulator-header">
+                  <h4>Rollercoaster Energy Lab Simulator</h4>
+                  <span class="sim-badge" id="sim-status-badge">PAUSED</span>
+                </div>
+                
+                <div class="canvas-container">
+                  <canvas id="sim-canvas"></canvas>
+                  <div class="canvas-overlay" id="canvas-overlay">
+                    <span class="overlay-text">Drag slider or press Play to run cart</span>
+                  </div>
+                </div>
+
+                <!-- Simulation Controls -->
+                <div class="simulator-controls">
+                  <div class="btn-group">
+                    <button class="btn btn-control" id="sim-play-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      </svg>
+                      Play
+                    </button>
+                    <button class="btn btn-control" id="sim-pause-btn" disabled>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      Pause
+                    </button>
+                    <button class="btn btn-control" id="sim-reset-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18" />
+                      </svg>
+                      Reset
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Sliders for properties -->
+                <div class="slider-group-container">
+                  <div class="slider-row">
+                    <div class="slider-label">
+                      <span>Initial Hill Height ($h$)</span>
+                      <strong id="height-val">12.0 m</strong>
+                    </div>
+                    <input type="range" class="sim-slider" id="height-slider" min="6" max="18" step="0.5" value="12">
+                  </div>
+
+                  <div class="slider-row">
+                    <div class="slider-label">
+                      <span>Friction Coefficient ($\mu$)</span>
+                      <strong id="friction-val">0.05</strong>
+                    </div>
+                    <input type="range" class="sim-slider" id="friction-slider" min="0" max="0.3" step="0.01" value="0.05">
+                  </div>
+
+                  <div class="slider-row">
+                    <div class="slider-label">
+                      <span>Gravity ($g$)</span>
+                      <strong id="gravity-val">9.8 m/s²</strong>
+                    </div>
+                    <input type="range" class="sim-slider" id="gravity-slider" min="5" max="20" step="0.1" value="9.8">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Energy Bar Graph widget -->
+              <div class="glass-card bar-graph-card">
+                <h4>Real-time Energy Values</h4>
+                <div class="energy-meters">
+                  <div class="meter-bar-container">
+                    <span class="meter-name">Potential Energy ($E_p$)</span>
+                    <div class="meter-track">
+                      <div class="meter-fill fill-potential" id="fill-potential"></div>
+                    </div>
+                    <span class="meter-value" id="val-potential">0.0 J</span>
+                  </div>
+
+                  <div class="meter-bar-container">
+                    <span class="meter-name">Kinetic Energy ($E_k$)</span>
+                    <div class="meter-track">
+                      <div class="meter-fill fill-kinetic" id="fill-kinetic"></div>
+                    </div>
+                    <span class="meter-value" id="val-kinetic">0.0 J</span>
+                  </div>
+
+                  <div class="meter-bar-container">
+                    <span class="meter-name">Thermal Loss ($E_{th}$)</span>
+                    <div class="meter-track">
+                      <div class="meter-fill fill-thermal" id="fill-thermal"></div>
+                    </div>
+                    <span class="meter-value" id="val-thermal">0.0 J</span>
+                  </div>
+
+                  <div class="meter-bar-container">
+                    <span class="meter-name">Total Mechanical Energy</span>
+                    <div class="meter-track">
+                      <div class="meter-fill fill-total" id="fill-total"></div>
+                    </div>
+                    <span class="meter-value" id="val-total">0.0 J</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Scaffolded Lesson and Worksheet -->
+            <div class="lab-worksheet-column">
+              
+              <!-- Conceptual Section -->
+              <div class="glass-card lesson-content-card">
+                <span class="section-tag">Lesson Content</span>
+                <h2>The Conservation of Energy</h2>
+                <p>
+                  Energy is a superpower. In physics, energy can neither be created nor destroyed—it can only **transform** from one form to another. This is the **Law of Conservation of Energy**.
+                </p>
+                <div class="formula-box">
+                  <strong>Total Mechanical Energy ($E_{total}$):</strong>
+                  <div class="math-eq">E_{total} = E_p + E_k + E_{thermal} = \text{Constant}</div>
+                </div>
+                
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>What is Gravitational Potential Energy ($E_p$)?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                  <div class="accordion-body">
+                    <p>It is the energy stored in an object due to its height. The higher the cart goes, the more potential energy it has. Formula:</p>
+                    <div class="math-eq">E_p = m \cdot g \cdot h</div>
+                    <p>Where $m$ is mass, $g$ is gravity, and $h$ is height.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>What is Kinetic Energy ($E_k$)?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                  <div class="accordion-body">
+                    <p>It is the energy of motion. The faster the cart speed, the more kinetic energy it gains. Formula:</p>
+                    <div class="math-eq">E_k = \frac{1}{2} m \cdot v^2</div>
+                    <p>Where $v$ is the velocity (speed) of the cart.</p>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <span>What is Friction and Thermal Energy ($E_{thermal}$)?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                  <div class="accordion-body">
+                    <p>When the metal wheels rub against the rollercoaster tracks, they generate **friction**. This friction turns useful mechanical energy into **heat** (thermal energy). This is why the cart slows down and why tracks feel hot after a run!</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Quiz (Scaffolded Questions) -->
+              <div class="glass-card quiz-card">
+                <span class="section-tag">Student Investigation Worksheet</span>
+                <h3>Test Your Insights</h3>
+
+                <!-- Question 1 -->
+                <div class="quiz-item" id="q1-container">
+                  <div class="quiz-header">
+                    <span class="badge badge-indigo">Q1: Conceptual</span>
+                    <p>At what position does the rollercoaster cart have the <strong>maximum Potential Energy</strong>?</p>
+                  </div>
+                  <div class="quiz-options">
+                    <button class="quiz-opt" data-q="1" data-val="a">A) At the lowest point of the track (bottom of the loop)</button>
+                    <button class="quiz-opt" data-q="1" data-val="b">B) At the starting point (highest hill)</button>
+                    <button class="quiz-opt" data-q="1" data-val="c">C) In the middle of the first drop</button>
+                  </div>
+                  <div class="quiz-feedback hidden"></div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="quiz-item" id="q2-container">
+                  <div class="quiz-header">
+                    <span class="badge badge-indigo">Q2: Mathematical Inquiry</span>
+                    <p>If a cart of mass $m = 100\text{ kg}$ is sitting at the top of a hill at height $h = 12\text{ meters}$, calculate its Potential Energy (use $g = 9.8\text{ m/s²}$).</p>
+                  </div>
+                  <div class="quiz-input-wrapper">
+                    <input type="number" id="q2-input" placeholder="Enter numerical answer in Joules">
+                    <button class="btn btn-secondary" id="q2-check-btn">Check</button>
+                    <button class="btn btn-hint" id="q2-hint-btn">Reveal Hint</button>
+                  </div>
+                  <div class="quiz-feedback hidden"></div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="quiz-item" id="q3-container">
+                  <div class="quiz-header">
+                    <span class="badge badge-indigo">Q3: Simulation Investigation</span>
+                    <p>Friction turns mechanical energy into thermal energy. Under which conditions will the cart fail to clear the second hill (height = 8.5m)?</p>
+                  </div>
+                  <div class="quiz-options">
+                    <button class="quiz-opt" data-q="3" data-val="a">A) Friction is set to 0.00</button>
+                    <button class="quiz-opt" data-q="3" data-val="b">B) Hill height is set to 18.0 meters</button>
+                    <button class="quiz-opt" data-q="3" data-val="c">C) High Friction (> 0.15) and Low Hill Height (< 10.0m)</button>
+                  </div>
+                  <div class="quiz-feedback hidden"></div>
+                </div>
+
+                <!-- Question 4: Free-text synthesis -->
+                <div class="quiz-item" id="q4-container">
+                  <div class="quiz-header">
+                    <span class="badge badge-indigo">Q4: Science Writing & Synthesis</span>
+                    <p>Describe the energy transformation that occurs as the cart speeds down the first hill, and explain how the presence of friction affects the total mechanical energy.</p>
+                  </div>
+                  <div class="essay-input-wrapper">
+                    <textarea id="q4-essay" rows="5" placeholder="Write your scientific analysis here..."></textarea>
+                    <div class="grading-action-banner">
+                      <p>Completed your response? Push it directly to our automated AI grading console to see how Claude assesses your science vocabulary and physics reasoning.</p>
+                      <button class="btn btn-emerald" id="grade-student-btn">
+                        <span>Send to AI Grader</span>
+                        <svg class="icon-inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Javascript Modules -->
+  <script src="simulator.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
